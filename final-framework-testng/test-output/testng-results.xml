@@ -2,88 +2,64 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27358" started-at="2018-12-18T18:16:26Z" finished-at="2018-12-18T18:16:53Z">
+  <suite name="Uniform test Suite" duration-ms="69110" started-at="2019-11-23T23:34:47 CST" finished-at="2019-11-23T23:35:56 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27358" started-at="2018-12-18T18:16:26Z" finished-at="2018-12-18T18:16:53Z">
-      <class name="com.training.regression.tests.LoginExcelTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2018-12-18T23:46:26Z" finished-at="2018-12-18T23:46:26Z">
+    <test name="Uniform test" duration-ms="69110" started-at="2019-11-23T23:34:47 CST" finished-at="2019-11-23T23:35:56 CST">
+      <class name="com.training.sanity.tests.UniformTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2019-11-23T23:34:47 CST" finished-at="2019-11-23T23:34:47 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="5796" started-at="2018-12-18T23:46:27Z" finished-at="2018-12-18T23:46:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="setUp" is-config="true" duration-ms="12098" started-at="2019-11-23T23:34:47 CST" finished-at="2019-11-23T23:34:59 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="2700" started-at="2018-12-18T23:46:32Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[hello]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="uniformLoginTest()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="uniformLoginTest" is-config="true" duration-ms="4629" started-at="2019-11-23T23:34:59 CST" finished-at="2019-11-23T23:35:03 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="788" started-at="2018-12-18T23:46:35Z" finished-at="2018-12-18T23:46:36Z">
+        </test-method> <!-- uniformLoginTest -->
+        <test-method status="PASS" signature="uniformOrderHistoryTest()[pri:1, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="uniformOrderHistoryTest" duration-ms="7674" started-at="2019-11-23T23:35:03 CST" finished-at="2019-11-23T23:35:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uniformOrderHistoryTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="tearDown" is-config="true" duration-ms="1844" started-at="2019-11-23T23:35:11 CST" finished-at="2019-11-23T23:35:13 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="4885" started-at="2018-12-18T23:46:36Z" finished-at="2018-12-18T23:46:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="setUp" is-config="true" duration-ms="10526" started-at="2019-11-23T23:35:13 CST" finished-at="2019-11-23T23:35:23 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="3104" started-at="2018-12-18T23:46:41Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[naveen]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testing@123]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="uniformLoginTest()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="uniformLoginTest" is-config="true" duration-ms="4609" started-at="2019-11-23T23:35:23 CST" finished-at="2019-11-23T23:35:28 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="767" started-at="2018-12-18T23:46:44Z" finished-at="2018-12-18T23:46:45Z">
+        </test-method> <!-- uniformLoginTest -->
+        <test-method status="PASS" signature="uniformEditAccountTest()[pri:2, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="uniformEditAccountTest" duration-ms="7320" started-at="2019-11-23T23:35:28 CST" finished-at="2019-11-23T23:35:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uniformEditAccountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="tearDown" is-config="true" duration-ms="1941" started-at="2019-11-23T23:35:35 CST" finished-at="2019-11-23T23:35:37 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="5306" started-at="2018-12-18T23:46:45Z" finished-at="2018-12-18T23:46:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="setUp" is-config="true" duration-ms="10417" started-at="2019-11-23T23:35:37 CST" finished-at="2019-11-23T23:35:48 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="loginDBTest" duration-ms="2595" started-at="2018-12-18T23:46:50Z" data-provider="excel-inputs" finished-at="2018-12-18T23:46:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[delete]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[delete]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="uniformLoginTest()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="uniformLoginTest" is-config="true" duration-ms="4591" started-at="2019-11-23T23:35:48 CST" finished-at="2019-11-23T23:35:52 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginDBTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginExcelTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="795" started-at="2018-12-18T23:46:53Z" finished-at="2018-12-18T23:46:53Z">
+        </test-method> <!-- uniformLoginTest -->
+        <test-method status="PASS" signature="uniformChangePasswordTest()[pri:3, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="uniformChangePasswordTest" duration-ms="1493" started-at="2019-11-23T23:35:52 CST" finished-at="2019-11-23T23:35:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uniformChangePasswordTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.UniformTests@3d99d22e]" name="tearDown" is-config="true" duration-ms="1891" started-at="2019-11-23T23:35:54 CST" finished-at="2019-11-23T23:35:56 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.regression.tests.LoginExcelTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.training.sanity.tests.UniformTests -->
+    </test> <!-- Uniform test -->
+  </suite> <!-- Uniform test Suite -->
 </testng-results>
