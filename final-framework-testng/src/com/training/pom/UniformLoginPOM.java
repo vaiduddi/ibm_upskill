@@ -13,7 +13,7 @@ public class UniformLoginPOM {
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Home Page User ICON Arrow
+	    //Home Page User ICON Arrow
 		@FindBy(xpath="//span[@class='caret']")
 		private WebElement userIconArrow; 
 		
@@ -32,6 +32,23 @@ public class UniformLoginPOM {
 		//Login Page Login Button
 		@FindBy(xpath="//input[@class='btn btn-primary']")
 		private WebElement loginButton; 
+		
+		//===================================================================================
+		
+		//Uniform Login Admin
+		
+		// Login UserName Admin
+		@FindBy(xpath="//input[@id='input-username']")
+		private WebElement userNameAdmin; 
+		
+		// Login Password Admin
+		@FindBy(xpath="//input[@id='input-password']")
+		private WebElement passwordAdmin; 
+		
+		// Login Button Admin
+		@FindBy(xpath="//button[@class='btn btn-primary']")
+		private WebElement loginButtonAdmin; 
+		
 		
 		//===================================================================================
 	
@@ -63,5 +80,24 @@ public class UniformLoginPOM {
 			this.loginButton.click();
 		}
 		
+		
+		//=============================================================================
+		
+		//Uniform Login Admin
+		
+	    // Login UserName Admin
+		public void sendUserName(String usernameadmin) { 
+			this.userNameAdmin.sendKeys(usernameadmin); 
+		}
+		
+		// Login Password Admin
+		public void sendPasswordAdmin(String  passwordadmin) { 
+			this.passwordAdmin.sendKeys(passwordadmin); 
+		}
+		
+		// Login Button Admin
+		public void clickLoginButtonAdmin() { 
+			this.loginButtonAdmin.click();
+		}
 		
 }
