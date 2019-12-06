@@ -5,8 +5,9 @@
    <test name = "Uniform test">
       <classes>
          
-         <class name = "com.training.sanity.tests.UniformTests" />
-         <class name = "com.training.sanity.tests.Uniform_UNF_051_Tests" />
+         <class name = "com.training.sanity.tests.UniformSimpleTests" />
+         <class name = "com.training.sanity.tests.UniformMediumTests" />
+         <class name = "com.training.sanity.tests.UniformComplexTests" />
       </classes>
    </test>
 </suite>	

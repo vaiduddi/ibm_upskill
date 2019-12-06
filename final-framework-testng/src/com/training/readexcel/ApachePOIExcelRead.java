@@ -33,6 +33,7 @@ public class ApachePOIExcelRead {
 			// Get first/desired sheet from the workbook
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			
+			
 			int rowTotal = sheet.getLastRowNum();
 
 			if ((rowTotal > 0) || (sheet.getPhysicalNumberOfRows() > 0)) {

@@ -21,7 +21,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 import com.trianing.waits.WaitTypes;
 
-public class UniformTests {
+public class UniformSimpleTests {
 
 	private WebDriver driver;
 	private String baseUrl;
@@ -39,6 +39,7 @@ public class UniformTests {
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
 	}
+	
 
 	@BeforeMethod 
 	public void setUp() throws Exception {
@@ -55,6 +56,7 @@ public class UniformTests {
 		driver.get(baseUrl);
 	}
 
+	
 	@BeforeMethod
 	public void uniformLoginTest() throws InterruptedException {
 		
@@ -126,6 +128,10 @@ public class UniformTests {
 		screenShot.captureScreenShot("Change Password ");
 		
 	}
+
+	
+
+	
 	
 	
 	@AfterMethod

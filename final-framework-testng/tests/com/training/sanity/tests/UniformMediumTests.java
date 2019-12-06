@@ -33,7 +33,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 import com.trianing.waits.WaitTypes;
 
-public class Uniform_UNF_051_Tests {
+public class UniformMediumTests {
 
 	private WebDriver driver;
 	private Actions action;
@@ -172,7 +172,7 @@ public class Uniform_UNF_051_Tests {
 		uniformAddRewardPOM.clickAddRewardPointsButton();
 		//uniformAddRewardPOM.clickSaveButton();
 		  
-		
+	
 		
 		uniformReportsPOM.clickDashboardReportsLink();
 		Thread.sleep(1000);
