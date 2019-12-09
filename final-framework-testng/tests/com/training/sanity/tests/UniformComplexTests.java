@@ -60,19 +60,8 @@ public class UniformComplexTests {
 		// open the browser 
 		//driver.get(baseUrl);
 	}
-/*
-	@BeforeMethod
-	public void uniformLoginTest() throws InterruptedException {
-		
-		Thread.sleep(3000);
-		
-		uniformLoginPOM.sendUserName("admin");
-		uniformLoginPOM.sendPasswordAdmin("admin@123");
-		uniformLoginPOM.clickLoginButtonAdmin();
-					
-	}
-*/
-	/*
+
+	
 	@Test (priority=1)
 	public void uniformUNF_073() throws InterruptedException {
 		
@@ -102,7 +91,8 @@ public class UniformComplexTests {
 		screenShot.captureScreenShot("UNF_073 ");
 		
 	}
-	*/
+	
+	
 	
 	@Test (priority=2)
 	public void uniformUNF_074() throws InterruptedException {
@@ -121,9 +111,9 @@ public class UniformComplexTests {
 		uniformPremiumSchoolPOM.clickCheckoutButton();
 		uniformPremiumSchoolPOM.clickGuestCheckoutRadioButton();
 		uniformPremiumSchoolPOM.clickContinueButton();
-		uniformPremiumSchoolPOM.sendFirstName("Vishwa1205");
-		uniformPremiumSchoolPOM.sendLastName("Vishwa1205");
-		uniformPremiumSchoolPOM.sendEmail("Vishwa1205@gmail.com");
+		uniformPremiumSchoolPOM.sendFirstName("Vishwa1208");
+		uniformPremiumSchoolPOM.sendLastName("Vishwa1208");
+		uniformPremiumSchoolPOM.sendEmail("Vishwa1208@gmail.com");
 		uniformPremiumSchoolPOM.sendTelephone("4041234567");
 		uniformPremiumSchoolPOM.sendAddress1("3400 W Plano Pkwy");
 		uniformPremiumSchoolPOM.sendCity("Plano");
@@ -134,13 +124,98 @@ public class UniformComplexTests {
 		uniformPremiumSchoolPOM.verifyCheckBox();
 		uniformPremiumSchoolPOM.sendComments("Testing");
 		uniformPremiumSchoolPOM.clickContinueButtonShipping();
+		Thread.sleep(2000);
 		uniformPremiumSchoolPOM.clickTermsAndCondition();
 		uniformPremiumSchoolPOM.clickContinueButtonPayment();
-		//uniformPremiumSchoolPOM.clickConfirmOrderButton();
+		uniformPremiumSchoolPOM.clickConfirmOrderButton();
+		uniformPremiumSchoolPOM.verifyOrderProcessedText();
 		
 		screenShot.captureScreenShot("UNF_074 ");
 		
 	}
+	
+	@Test (priority=3)
+	public void uniformUNF_074_Continue() throws InterruptedException {
+		
+		baseUrl = properties.getProperty("baseURLAdmin");
+		driver.get(baseUrl);
+        Thread.sleep(3000);
+		
+		uniformLoginPOM.sendUserName("admin");
+		uniformLoginPOM.sendPasswordAdmin("admin@123");
+		uniformLoginPOM.clickLoginButtonAdmin();
+		
+		uniformPremiumSchoolPOM.clickSalesIcon();
+		uniformPremiumSchoolPOM.clickSalesOrdersLink();
+		uniformPremiumSchoolPOM.clickViewLink();
+		uniformPremiumSchoolPOM.selectOrderStatus();
+		uniformPremiumSchoolPOM.clickAddHistory();
+			
+		
+		screenShot.captureScreenShot("UNF_073 ");
+		
+	}
+	
+	
+	@Test (priority=4)
+	public void uniformUNF_075() throws InterruptedException {
+		
+		baseUrl = properties.getProperty("baseURL");
+		screenShot = new ScreenShot(driver); 
+		// open the browser 
+		driver.get(baseUrl);
+		
+
+		Thread.sleep(3000);
+		
+		uniformLoginPOM.clickuserIconArrow();
+		uniformLoginPOM.clickLoginbtn();
+		
+		uniformLoginPOM.sendEmail("vaiduddi1120@in.ibm.com");
+		uniformLoginPOM.sendPassword("Testing1234");
+		
+		uniformLoginPOM.clickLoginButton();
+		
+		uniformOrderHistoryPOM.clickorderHistoryLink();
+		uniformOrderHistoryPOM.clickorderHistoryViewButton();
+		
+		uniformOrderHistoryPOM.clickOrderReturnIcon();
+		uniformOrderHistoryPOM.clickReasonForReturnRadioButton();
+		uniformOrderHistoryPOM.clickProductIsOpenedRadioButton();
+		uniformOrderHistoryPOM.sendcomment("Faulty Test");
+		uniformOrderHistoryPOM.clickTermsAndConditions();
+		//uniformOrderHistoryPOM.clickSubmitButton();
+		
+		screenShot.captureScreenShot("UNF_075 ");
+		
+	}
+	
+	
+	@Test (priority=5)
+	public void uniformUNF_076() throws InterruptedException {
+		
+		baseUrl = properties.getProperty("baseURLAdmin");
+		driver.get(baseUrl);
+        Thread.sleep(3000);
+		
+		uniformLoginPOM.sendUserName("admin");
+		uniformLoginPOM.sendPasswordAdmin("admin@123");
+		uniformLoginPOM.clickLoginButtonAdmin();
+		
+		uniformPremiumSchoolPOM.clickSalesIcon();
+		uniformPremiumSchoolPOM.clickSalesOrdersLink();
+		
+		uniformPremiumSchoolPOM.clickEditOrder();
+		uniformPremiumSchoolPOM.clickEditOrderContinueButton();
+			
+		
+		screenShot.captureScreenShot("UNF_073 ");
+		
+	}
+	
+	
+	
+	
 
 	@AfterMethod
 	public void tearDown() throws Exception {

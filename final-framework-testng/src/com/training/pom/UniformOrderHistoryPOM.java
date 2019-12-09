@@ -57,6 +57,30 @@ public class UniformOrderHistoryPOM {
 	@FindBy(xpath="//tbody//tr[3]//td[1]")
 	private WebElement verifyRegularTShirtSize32;
 	
+	//Order Return icon
+	@FindBy(xpath="//tr[1]//td[6]//a[1]")
+	private WebElement returnicon;
+	
+	//Reason for Return
+	@FindBy(xpath="//div[@class='col-sm-10']//div[1]//label[1]//input[1]")
+	private WebElement reasonForReturnRadioButton;
+	
+	//Product is opened 
+	@FindBy(xpath="//div[@class='form-group required']/div[@class='col-sm-10']/label[1]")
+	private WebElement productIsOpenedRadioButton;
+	
+	//Faulty comment
+	@FindBy(xpath="//textarea[@id='input-comment']")
+	private WebElement comment;
+	
+	//Terms and Condition
+	@FindBy(xpath="//input[@name='agree']")
+	private WebElement termsAndConditions;
+	
+	//Submit Button
+	@FindBy(xpath="//input[@class='btn btn-primary']")
+	private WebElement submitButton;
+	
 	
 	//=======================================================================================
 	
@@ -126,6 +150,39 @@ public class UniformOrderHistoryPOM {
 			this.verifyRegularTShirtSize32.equals("REGULAR T-SHIRTS (Rust)                                ");
 			this.verifyRegularTShirtSize32.equals(" - Chest Size: 32");
 		}
+		
+		//Order return Icon
+		public void clickOrderReturnIcon() {  
+			this.returnicon.click();
+		}
+		
+		//Reason For Return Radio Button
+		public void clickReasonForReturnRadioButton() {  
+			this.reasonForReturnRadioButton.click();
+		}
+		
+		//Product Is Opened Radio Button
+		public void clickProductIsOpenedRadioButton() {  
+			this.productIsOpenedRadioButton.click();
+		}
+		
+		//Faulty
+		public void sendcomment(String Comment) {  
+			this.comment.sendKeys(Comment);
+		}
+		
+		//Terms and conditions
+		public void clickTermsAndConditions() {  
+			this.termsAndConditions.click();
+		}
+		
+		//Submit Button
+		public void clickSubmitButton() {  
+			this.submitButton.click();
+		}
+		
+		
+		
 	
 	
 	

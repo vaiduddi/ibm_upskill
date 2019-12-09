@@ -1,5 +1,7 @@
 package com.training.pom;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -119,6 +121,38 @@ public class UniformPremiumSchoolPOM {
 		//Confirm Order
 		@FindBy(xpath="//input[@id='button-confirm']")
 		private WebElement confirmOrderButton;
+		
+		//order processed text message
+		@FindBy(xpath="//p[contains(text(),'Your order has been successfully processed!')]")
+		private WebElement orderProcessed;
+		
+		//Dashboard Sale icon
+		@FindBy(xpath="//li[@id='sale']/a[1]")
+		private WebElement dashboardSalesIcon;
+		
+		//Dashboard Sale Orders link
+		@FindBy(xpath="//li[@id='sale']/ul/li[1]/a[1]")
+		private WebElement dashboardSalesOrders;
+		
+		//View Icon
+		@FindBy(xpath="//tr[1]//td[8]//a[1]")
+		private WebElement view;
+		
+		//Order status
+		@FindBy(xpath="//select[@id='input-order-status']")
+		private WebElement orderStatus;
+		
+		//Add History
+		@FindBy(xpath="//button[@id='button-history']")
+		private WebElement addHistoryButton;
+		
+		//Edit order
+		@FindBy(xpath="//tr[1]//td[8]//a[2]")
+		private WebElement editOrder;
+		
+		//Edit order Continue Button
+		@FindBy(xpath="//button[@id='button-customer']")
+		private WebElement editOrderContinueButton;
 		
 		//=============================================================================
 
@@ -266,6 +300,54 @@ public class UniformPremiumSchoolPOM {
 		public void clickConfirmOrderButton() { 
 			this.confirmOrderButton.click();
 		}
+		
+		//Order Processed Button
+		public void verifyOrderProcessedText() { 
+			String actual = this.orderProcessed.getText();
+			String expected = "Your order has been successfully processed!";
+			
+		    assertEquals(actual, expected);
+		}
+		
+		//dashboard Sales icon
+		public void clickSalesIcon() { 
+			this.dashboardSalesIcon.click();
+		}
+		
+		//Dashboard Sales orders Link
+		public void clickSalesOrdersLink() { 
+			this.dashboardSalesOrders.click();
+		}
+		
+		//View icon
+		public void clickViewLink() { 
+			this.view.click();
+		}
+		
+		//Order Status
+		public void selectOrderStatus() { 
+			this.orderStatus.click();
+			
+			Select se = new Select(orderStatus);
+			se.selectByVisibleText("Complete");
+		}
+		
+		//Add History
+		public void clickAddHistory() { 
+			this.addHistoryButton.click();
+		}
+		
+		//Edit Order 
+		public void clickEditOrder() { 
+			this.editOrder.click();
+		}
+		
+		//Edit Order Continue Button 
+		public void clickEditOrderContinueButton() { 
+			this.editOrderContinueButton.click();
+		}
+		
+		
 		
 		
 		

@@ -129,11 +129,6 @@ public class UniformSimpleTests {
 		
 	}
 
-	
-
-	
-	
-	
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
